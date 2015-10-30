@@ -16,6 +16,7 @@ class MainsController < ApplicationController
   end
 
   def my_way
+  	@my_way = MyWay.find(params[:id])
   end
 
   def price

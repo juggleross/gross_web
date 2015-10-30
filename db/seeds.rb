@@ -31,3 +31,8 @@ Nature.create(name: "Закат", image_url: "content/nature/nature_05.jpg", ima
 Nature.create(name: "Рябина", image_url: "content/nature/nature_06.jpg", image_thumb_url: "content/nature/thumb_nature_06.jpg")
 Nature.create(name: "Озеро", image_url: "content/nature/nature_07.jpg", image_thumb_url: "content/nature/thumb_nature_07.jpg")
 Nature.create(name: "Лебедь", image_url: "content/nature/nature_08.jpg", image_thumb_url: "content/nature/thumb_nature_08.jpg")
+
+MyWay.create(image_url: "content/1.jpg")
+MyWay.create(image_url: "content/2.jpg")
+MyWay.create(image_url: "content/3.jpg")
+MyWay.create(image_url: "content/4.jpg")
