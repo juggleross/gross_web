@@ -43,3 +43,7 @@ group :development, :test do
   gem 'spring'
 end
 
+group :prodaction do 
+  gem 'pg'
+end
+
