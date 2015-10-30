@@ -11,16 +11,21 @@ Rails.application.routes.draw do
   get 'mains/biography', as: :biography
   get 'mains/price', as: :price
 
+  # Example resource route (maps HTTP verbs to controller actions automatically):
+  resources :mains
+  resources :weddings
+  resources :natures
+
   get 'mains/:id/my_way' => 'mains#my_way', as: :my_way
   
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-    resources :mains
-    resources :weddings
-    resources :natures
+  # # Example resource route (maps HTTP verbs to controller actions automatically):
+  #   resources :mains
+  #   resources :weddings
+  #   resources :natures
 
   # Example resource route with options:
   #   resources :products do
