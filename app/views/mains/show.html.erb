@@ -1,0 +1,46 @@
+<body class="collections faces 9">
+
+<div id="wrapper">
+	<div id="header">
+		<p id="logo">Rita Gross</p>
+	</div>
+	<div id="content">
+			<div id="photo">
+				<div class="figure">
+					<img src=<%= image_url(@person.image_url) %> alt="Mandela Park, Accra." />
+					<p class="caption"><%=@person.name %>, <%=@person.city%></p>
+				</div>
+				<div id="thumbs-carousel">
+					<a id="ctrl-prev" href="#">prev</a> <a id="ctrl-next" href="#">next</a>
+					<div id="thumbs-wrapper">
+						<ul id="thumb-pics">
+							
+							<% @persons.each do |i| %>
+							  <% if i == @person %>
+							    <li class="active"><a href="people.html" ><img src=<%= image_url(@person.image_thumb_url) %>  /></a></li>
+							    <%next%>
+							  <% end %>
+								<li><a href=<%=main_path(i)%>> <%= image_tag(image_url(i.image_thumb_url)) %> </a></li>
+							<% end %>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+<br>
+
+ <p class='ritadown'> 
+  <%= link_to "главная", mains_path %>
+  <a href="../contact.html" id='w2'> контакты</a> 
+  <a href="../biography.html" id='w4'> биография </a>
+  <a href="../awards-exhibitions-travels.html" id='w5'> услуги </a>
+  <a href="../my-way-of-working.html"  id='w6'> мой путь фотографа  </a>
+</p> 
+
+</div>
+
+
+
+</body>
