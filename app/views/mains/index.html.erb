@@ -8,8 +8,8 @@
 	<div id="content">
 			<ul id="home-pics">
 				<li><a href=<%= main_path(1)%> title="Просмотреть индивидуальные фотосеты"><img src=<%= image_url("content/home/people.jpg") %> alt="faces and places" /><span class="caption" >люди</span></a></li>
-				<li><a href="wedding_foto/wedding.html" title="Просмотреть свадебную коллекцию"><img src=<%= image_url("content/home/wedding.jpg")%> alt="amen" /><span class="caption">свадьба</span></a></li>
-				<li><a href="nature_foto/nature.html" title="Просмотерть фотографии природы "><img src=<%=image_url("content/home/nature.jpg")%> alt="imperfection" /><span class="caption">природа</span></a></li>
+				<li><a href=<%= wedding_path(1) %> title="Просмотреть свадебную коллекцию"><img src=<%= image_url("content/home/wedding.jpg")%> alt="amen" /><span class="caption">свадьба</span></a></li>
+				<li><a href=<%= nature_path(1) %> title="Просмотерть фотографии природы "><img src=<%=image_url("content/home/nature.jpg")%> alt="imperfection" /><span class="caption">природа</span></a></li>
 			</ul>
 			
 	</div>
@@ -20,10 +20,10 @@
 
  <p class='ritadown'> 
   <a href=<%= mains_path %> id='w1'> главная</a>
-  <a href="contact.html" id='w2'> контакты</a> 
-  <a href="biography.html" id='w4'> биография </a>
-  <a href="awards-exhibitions-travels.html" id='w5'> услуги </a>
-  <a href="my-way-of-working.html"  id='w6'> мой путь фотографа  </a>
+  <a href=<%= contact_path %> id='w2'> контакты</a> 
+  <a href=<%= biography_path %> id='w4'> биография </a>
+  <a href=<%= price_path%> id='w5'> услуги </a>
+  <a href=<%= my_way_path%>  id='w6'> мой путь фотографа  </a>
 </p> 
 		
 </div>

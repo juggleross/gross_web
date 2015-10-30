@@ -7,20 +7,20 @@
 	<div id="content">
 			<div id="photo">
 				<div class="figure">
-					<img src=<%= image_url(@person.image_url) %> alt="Mandela Park, Accra." />
-					<p class="caption"><%=@person.name %>, <%=@person.city%></p>
+					<img src=<%= image_url(@nature.image_url) %> alt="Mandela Park, Accra." />
+					<p class="caption"><%=@nature.name %></p>
 				</div>
 				<div id="thumbs-carousel">
 					<a id="ctrl-prev" href="#">prev</a> <a id="ctrl-next" href="#">next</a>
 					<div id="thumbs-wrapper">
 						<ul id="thumb-pics">
 							
-							<% @persons.each do |i| %>
-							  <% if i == @person %>
-							    <li class="active"><a href="people.html" ><img src=<%= image_url(@person.image_thumb_url) %>  /></a></li>
+							<% @natures.each do |i| %>
+							  <% if i == @nature %>
+							    <li class="active"><a href="people.html" ><img src=<%= image_url(@nature.image_thumb_url) %>  /></a></li>
 							    <%next%>
 							  <% end %>
-								<li><a href=<%=main_path(i)%>> <%= image_tag(image_url(i.image_thumb_url)) %> </a></li>
+								<li><a href=<%=nature_path(i)%>> <%= image_tag(image_url(i.image_thumb_url)) %> </a></li>
 							<% end %>
 						</ul>
 					</div>
@@ -30,6 +30,7 @@
 </div>
 
 <br>
+
 
  <p class='ritadown'> 
   <a href=<%= mains_path %> id='w1'> главная</a>

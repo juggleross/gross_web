@@ -8,4 +8,17 @@ class MainsController < ApplicationController
     @person = Person.find(params[:id])
     @persons = Person.all
   end
+
+  def contact
+  end
+
+  def biography
+  end
+
+  def my_way
+  end
+
+  def price
+  end
+
 end
