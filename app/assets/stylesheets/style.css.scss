@@ -65,12 +65,12 @@ a:link, a:visited {
 		height: 15px;
 	}
 	#thumbs-carousel a#ctrl-prev {
-		background: url(assets-path("style/arrow-left.gif"));
+		background: url(asset-path('style/arrow-left.gif'));
 		width: 27px;
 		left: 0;
 	}
 	#thumbs-carousel a#ctrl-next {
-		background: url(asset-path("style/arrow-right.gif"));
+		background: url("/assets/style/arrow-right.gif");
 		width: 24px;
 		right: 0;
 	}
@@ -234,14 +234,14 @@ span.caption {
 		height: 15px;
 	}
 	#pagination #nav-previous a {
-		background: url(assets-path("style/arrow-left.gif"));
+		background: url(asset-path('style/arrow-left.gif'));
 		width: 27px;
 	}
 	#pagination #nav-next {
 		margin-left: 11px;
 	}
 	#pagination #nav-next a {
-		background: url(assets-path("style/arrow-right.gif"));
+		background: url(asset-path('style/arrow-right.gif'));
 		margin-left: 11px;
 		width: 24px;
 	}
