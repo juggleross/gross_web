@@ -1,4 +1,7 @@
-# gross_web
-Photography websites have never looked better
-visit:
-<a href="https://ritagross.herokuapp.com/"> ritagross.herokuapp.com </a>
+This is a main page:
+
+![alt tag]()
+
+Inner page with photo:
+
+![alt tag]()
